@@ -6,7 +6,7 @@ authors:
     given-names: Satyabrat
     orcid: "https://orcid.org/0009-0002-4511-5154"
     affiliation: "BITS Pilani, Hyderabad Campus"
-version: "7.3"
+version: "8.0"
 date-released: "2026-11-22"
 license: MIT
 repository-code: "https://github.com/satyabrat100/ai-cyber-bank-capital"

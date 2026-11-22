@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Full replication of package v7.3. Run from the package root: ./run_all.sh
+# Full replication of package v8.0. Run from the package root: ./run_all.sh
 # Part A needs only this package. Part B needs the raw repositories (README section 1). Parts C-E need only this package.
 set -e
 echo "A. Regressions from the processed monthly panel (Tables 2, C1, C2; Section 8.5) - under 1 minute"

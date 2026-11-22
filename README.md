@@ -1,8 +1,8 @@
-# Replication package v7.3 — AI-accelerated cyber risk, Basel III operational-risk capital and credit
+# Replication package v8.0 — AI-accelerated cyber risk, Basel III operational-risk capital and credit
 
 Archive: Zenodo, DOI 10.5281/zenodo.24439918 (all versions are listed on the Zenodo record).
 Code: https://github.com/satyabrat100/ai-cyber-bank-capital
-Paper: Maharana, S., "AI-Accelerated Cyber Risk, Bank Capital and Credit Supply" (manuscript v7.3).
+Paper: Maharana, S., "AI-Accelerated Cyber Risk, Bank Capital and Credit Supply" (manuscript v8.0).
 
 Run everything from this folder. Python 3.11+; exact package versions in `requirements.txt` (tested with Python 3.13.18).
 
@@ -38,28 +38,28 @@ cd ..
 
 `./run_all.sh` runs every step in order (about 75 minutes, mostly simulations). Then `sha256sum -c SHA256SUMS` compares all outputs with the published ones.
 
-| Paper item | Script | Output (results/) |
+| Paper item (manuscript v8.0) | Script | Output (results/) |
 |---|---|---|
 | Table 2, Tables C1-C2 | scripts/verify_tables.py | verify_tables.json |
 | Section 8.5 (placebos) | scripts/placebo_panel.py | placebo_panel.json |
-| Table 2a (GTIG periods) | scripts/gtig_matched.py | gtig_matched.json |
-| Table 2b (exploit functionality) | scripts/poc_quality.py, poc_functional.py, poc_crossval.py | poc_quality.json, poc_functional.json, poc_crossval.json |
-| Tables 3-4 (severity, Hill) | scripts/tail_analysis.py, hill_thresholds.py | tail_results.json, hill_thresholds.json |
-| Table 5 (India) | scripts/india.py | printed |
-| Table 15, Section 3.1 (mapping) | scripts/mapping.py, ent_denominator.py | mapping.json |
+| Table 3, Table E3 (severity, Hill) | scripts/tail_analysis.py, hill_thresholds.py | tail_results.json, hill_thresholds.json |
+| Table 4, Section 5.8 (AI-specific tests) | scripts/identification.py | identification.json |
+| Table 6, Tables E5-E6, Figures 2-3 | main_simulations.py (uses core_sim.py) | results_main.json |
+| Table 7, Table E10 (CRAR, credit; BIC) | scripts/crar_credit.py, scripts/bic_sens.py | crar_credit.json, bic_sens.json |
+| Table 8, Table E8, Figure 4 (capped losses) | cap_probs.py, cap_validation.py | cap_probs.json, cap_validation.json |
+| Table 9, Figure 3 bars (severity bootstrap) | sev_bootstrap.py | sev_bootstrap.json |
+| Table 10, Section 3.1 (mapping) | scripts/mapping.py, ent_denominator.py | mapping.json |
+| Table E1 (exploit functionality; post sample May-Sep 2026) | scripts/poc_quality.py, poc_functional.py, poc_crossval.py | poc_quality.json, poc_functional.json, poc_crossval.json |
+| Table E2 (GTIG periods) | scripts/gtig_matched.py | gtig_matched.json |
+| Table E4 (India) | scripts/india.py | printed |
+| Table E7 (common vendor) | scripts/cv_sens.py | results_cv_sens.json |
+| Tables E9-E10 | sensitivity.py | results_sensitivity.json |
+| Table E11 (N, omega) | scripts/n_omega_sens.py | n_omega_sens.json |
+| Table E12 (fixed-severity common vendor) | scripts/cv_fixed.py | cv_fixed.json |
 | Appendix A (propositions) | scripts/verify_props.py | results_verify_props.json |
-| Tables 7-9, Figure 2 | main_simulations.py (uses core_sim.py) | results_main.json |
-| Tables 12a-12b (capped losses) | cap_validation.py, cap_probs.py | cap_validation.json, cap_probs.json |
-| Table 12c (severity-parameter bootstrap) | sev_bootstrap.py | sev_bootstrap.json |
-| Tables 13-14 | sensitivity.py, scripts/bic_sens.py | results_sensitivity.json, bic_sens.json |
-| Table 10 (common vendor) | scripts/cv_sens.py | results_cv_sens.json |
-| Table 14a (N, omega) | scripts/n_omega_sens.py | n_omega_sens.json |
-| Table 14b (fixed-severity common vendor) | scripts/cv_fixed.py | cv_fixed.json |
-| Table 11 (CRAR, credit) | scripts/crar_credit.py | crar_credit.json |
-| Table 2c, Section 5.8 (AI-specific tests) | scripts/identification.py | identification.json |
 | Reference list | scripts/check_dois.py | printed (needs internet) |
 
-`legacy/` holds superseded scripts kept for transparency; none feeds a v7.3 table (`legacy/ai_cyber_sim.py` is used only by verify_props.py for the single-loss check).
+`legacy/` holds superseded scripts kept for transparency; none feeds a v8.0 table (`legacy/ai_cyber_sim.py` is used only by verify_props.py for the single-loss check).
 
 ## 3. Definitions used in the code
 

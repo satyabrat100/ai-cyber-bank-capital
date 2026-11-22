@@ -2411,32 +2411,21 @@
     "suspect": false,
     "nuclei": false
    }
-  ]
+  ],
+  "dropped_oct2026": 0
  },
  "post": {
-  "n": 200,
+  "n": 174,
   "levels": {
-   "0": 35,
-   "1": 45,
-   "2": 13,
-   "3": 107
+   "0": 33,
+   "1": 36,
+   "2": 10,
+   "3": 95
   },
-  "suspect": 12,
-  "nuclei": 4,
+  "suspect": 9,
+  "nuclei": 3,
   "gone": 0,
   "items": [
-   {
-    "cve": "CVE-2026-103663",
-    "repo": "striga-ai/CVE-2026-103663",
-    "level": 3,
-    "n_code": 3,
-    "syntax_ok": 3,
-    "syntax_fail": 0,
-    "target": true,
-    "specific": true,
-    "suspect": false,
-    "nuclei": false
-   },
    {
     "cve": "CVE-2026-63642",
     "repo": "hakaioffsec/CVE-2026-63642",
@@ -2630,18 +2619,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-15989",
-    "repo": "fl0ydsec/CVE-2026-15989",
-    "level": 3,
-    "n_code": 1,
-    "syntax_ok": 1,
-    "syntax_fail": 0,
-    "target": true,
-    "specific": true,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
     "cve": "CVE-2026-13736",
     "repo": "MinhHK68/CVE-2026-13736",
     "level": 0,
@@ -2750,18 +2727,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-85314",
-    "repo": "oscerd/CVE-2026-85314",
-    "level": 1,
-    "n_code": 7,
-    "syntax_ok": 0,
-    "syntax_fail": 0,
-    "target": false,
-    "specific": true,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
     "cve": "CVE-2026-19195",
     "repo": "patrickt2017/CVE-2026-19195-PoC",
     "level": 1,
@@ -2846,18 +2811,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-74034",
-    "repo": "roninreilly/wazuh-unauth-chain",
-    "level": 3,
-    "n_code": 1,
-    "syntax_ok": 1,
-    "syntax_fail": 0,
-    "target": true,
-    "specific": true,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
     "cve": "CVE-2026-11561",
     "repo": "alperenkesk/CVE-2026-11561",
     "level": 3,
@@ -2878,30 +2831,6 @@
     "syntax_fail": 0,
     "target": true,
     "specific": true,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
-    "cve": "CVE-2026-84181",
-    "repo": "oscerd/CVE-2026-84181",
-    "level": 1,
-    "n_code": 7,
-    "syntax_ok": 0,
-    "syntax_fail": 0,
-    "target": false,
-    "specific": true,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
-    "cve": "CVE-2026-93300",
-    "repo": "Datxzzz/CVE-2026-93300",
-    "level": 2,
-    "n_code": 1,
-    "syntax_ok": 1,
-    "syntax_fail": 0,
-    "target": true,
-    "specific": false,
     "suspect": false,
     "nuclei": false
    },
@@ -3074,18 +3003,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-107806",
-    "repo": "murrez/CVE-2026-107806",
-    "level": 3,
-    "n_code": 1,
-    "syntax_ok": 1,
-    "syntax_fail": 0,
-    "target": true,
-    "specific": true,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
     "cve": "CVE-2026-88854",
     "repo": "murrez/CVE-2026-88854",
     "level": 3,
@@ -3122,18 +3039,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-98258",
-    "repo": "imkidz0/Trilemma",
-    "level": 2,
-    "n_code": 2,
-    "syntax_ok": 2,
-    "syntax_fail": 0,
-    "target": true,
-    "specific": false,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
     "cve": "CVE-2026-42228",
     "repo": "rudSarkar/CVE-2026-42228",
     "level": 3,
@@ -3143,18 +3048,6 @@
     "target": true,
     "specific": true,
     "suspect": false,
-    "nuclei": false
-   },
-   {
-    "cve": "CVE-2026-110311",
-    "repo": "akiraraikou36-hub/cve-2026-110311-gitea-lab",
-    "level": 3,
-    "n_code": 3,
-    "syntax_ok": 2,
-    "syntax_fail": 0,
-    "target": true,
-    "specific": true,
-    "suspect": true,
     "nuclei": false
    },
    {
@@ -3314,18 +3207,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-98499",
-    "repo": "woshigenm/CVE-2026-98499",
-    "level": 1,
-    "n_code": 1,
-    "syntax_ok": 1,
-    "syntax_fail": 0,
-    "target": false,
-    "specific": true,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
     "cve": "CVE-2026-15282",
     "repo": "shinthink/CVE-2026-15282",
     "level": 3,
@@ -3345,18 +3226,6 @@
     "syntax_ok": 10,
     "syntax_fail": 0,
     "target": true,
-    "specific": true,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
-    "cve": "CVE-2026-107159",
-    "repo": "azuk4r/CVE-2026-107159",
-    "level": 1,
-    "n_code": 1,
-    "syntax_ok": 1,
-    "syntax_fail": 0,
-    "target": false,
     "specific": true,
     "suspect": false,
     "nuclei": false
@@ -3446,18 +3315,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-104905",
-    "repo": "wvllxe/CVE-2026-104905-facturascripts-object-injection",
-    "level": 1,
-    "n_code": 1,
-    "syntax_ok": 0,
-    "syntax_fail": 0,
-    "target": false,
-    "specific": true,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
     "cve": "CVE-2026-84520",
     "repo": "csrXamfi/CVE-2026-84520",
     "level": 1,
@@ -3542,18 +3399,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-112222",
-    "repo": "Mor-Golan/CVE-2026-112222",
-    "level": 3,
-    "n_code": 1,
-    "syntax_ok": 1,
-    "syntax_fail": 0,
-    "target": true,
-    "specific": true,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
     "cve": "CVE-2026-43637",
     "repo": "rahulreddykarne/CVE-2026-43637-cornac",
     "level": 3,
@@ -3614,18 +3459,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-104082",
-    "repo": "eev4n/smartermail",
-    "level": 2,
-    "n_code": 3,
-    "syntax_ok": 3,
-    "syntax_fail": 0,
-    "target": true,
-    "specific": false,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
     "cve": "CVE-2026-71557",
     "repo": "Saku0512/CVE-2026-71557-poc",
     "level": 1,
@@ -3658,18 +3491,6 @@
     "syntax_fail": 0,
     "target": false,
     "specific": false,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
-    "cve": "CVE-2026-85312",
-    "repo": "oscerd/CVE-2026-85312",
-    "level": 1,
-    "n_code": 7,
-    "syntax_ok": 0,
-    "syntax_fail": 0,
-    "target": false,
-    "specific": true,
     "suspect": false,
     "nuclei": false
    },
@@ -3718,18 +3539,6 @@
     "syntax_fail": 0,
     "target": false,
     "specific": false,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
-    "cve": "CVE-2026-105221",
-    "repo": "abraxas/cve-2026-105221-gist-tls",
-    "level": 3,
-    "n_code": 3,
-    "syntax_ok": 3,
-    "syntax_fail": 0,
-    "target": true,
-    "specific": true,
     "suspect": false,
     "nuclei": false
    },
@@ -3854,18 +3663,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-94169",
-    "repo": "kize7/CVE-2026-94169",
-    "level": 0,
-    "n_code": 0,
-    "syntax_ok": 0,
-    "syntax_fail": 0,
-    "target": false,
-    "specific": false,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
     "cve": "CVE-2026-15409",
     "repo": "HORKimhab/CVE-2026-15409",
     "level": 1,
@@ -3911,18 +3708,6 @@
     "target": true,
     "specific": false,
     "suspect": false,
-    "nuclei": false
-   },
-   {
-    "cve": "CVE-2026-63277",
-    "repo": "HORKimhab/CVE-2026-63277",
-    "level": 3,
-    "n_code": 2,
-    "syntax_ok": 1,
-    "syntax_fail": 0,
-    "target": true,
-    "specific": true,
-    "suspect": true,
     "nuclei": false
    },
    {
@@ -4226,18 +4011,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-85243",
-    "repo": "oscerd/CVE-2026-85243",
-    "level": 1,
-    "n_code": 9,
-    "syntax_ok": 0,
-    "syntax_fail": 0,
-    "target": false,
-    "specific": true,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
     "cve": "CVE-2026-39492",
     "repo": "shinthink/CVE-2026-39492",
     "level": 3,
@@ -4346,18 +4119,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-103355",
-    "repo": "Hassham1/CVE-2026-103355-unlimited-elements-sqli-poc",
-    "level": 3,
-    "n_code": 3,
-    "syntax_ok": 2,
-    "syntax_fail": 0,
-    "target": true,
-    "specific": true,
-    "suspect": false,
-    "nuclei": true
-   },
-   {
     "cve": "CVE-2026-93903",
     "repo": "Tautvydas-Aleliunas/CVE-2026-93903",
     "level": 0,
@@ -4439,18 +4200,6 @@
     "target": true,
     "specific": true,
     "suspect": true,
-    "nuclei": false
-   },
-   {
-    "cve": "CVE-2026-88789",
-    "repo": "oscerd/CVE-2026-88789",
-    "level": 1,
-    "n_code": 5,
-    "syntax_ok": 0,
-    "syntax_fail": 0,
-    "target": false,
-    "specific": true,
-    "suspect": false,
     "nuclei": false
    },
    {
@@ -4586,18 +4335,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-102262",
-    "repo": "pawlokk/dymo-id-cve-poc",
-    "level": 1,
-    "n_code": 3,
-    "syntax_ok": 1,
-    "syntax_fail": 1,
-    "target": false,
-    "specific": true,
-    "suspect": true,
-    "nuclei": false
-   },
-   {
     "cve": "CVE-2026-79387",
     "repo": "jhli07/CVE-2026-79387-PbootCMS-SQL-Injection",
     "level": 0,
@@ -4670,18 +4407,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-105445",
-    "repo": "CompleteTech-Security/docker-hub-ghostpat-check",
-    "level": 3,
-    "n_code": 6,
-    "syntax_ok": 5,
-    "syntax_fail": 0,
-    "target": true,
-    "specific": true,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
     "cve": "CVE-2026-65374",
     "repo": "HORKimhab/CVE-2026-65374",
     "level": 0,
@@ -4730,18 +4455,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-59358",
-    "repo": "abraxas/CVE-2026-59358",
-    "level": 3,
-    "n_code": 3,
-    "syntax_ok": 3,
-    "syntax_fail": 0,
-    "target": true,
-    "specific": true,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
     "cve": "CVE-2026-48172",
     "repo": "HORKimhab/CVE-2026-48172",
     "level": 3,
@@ -4778,30 +4491,6 @@
     "nuclei": false
    },
    {
-    "cve": "CVE-2026-97657",
-    "repo": "murrez/CVE-2026-97657",
-    "level": 3,
-    "n_code": 1,
-    "syntax_ok": 1,
-    "syntax_fail": 0,
-    "target": true,
-    "specific": true,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
-    "cve": "CVE-2026-112900",
-    "repo": "techupdate24/python-pillow-rce-cve-2026-112900",
-    "level": 0,
-    "n_code": 0,
-    "syntax_ok": 0,
-    "syntax_fail": 0,
-    "target": false,
-    "specific": false,
-    "suspect": false,
-    "nuclei": false
-   },
-   {
     "cve": "CVE-2026-73072",
     "repo": "HORKimhab/CVE-2026-73072",
     "level": 0,
@@ -4825,24 +4514,25 @@
     "suspect": false,
     "nuclei": false
    }
-  ]
+  ],
+  "dropped_oct2026": 26
  },
  "level2_plus": {
   "pre": 0.44,
-  "post": 0.6,
-  "ratio": 1.3636363636363635,
+  "post": 0.603448275862069,
+  "ratio": 1.3714733542319748,
   "ci": [
-   1.1237113402061856,
-   1.6623417207792206
+   1.1264367816091954,
+   1.6799292661361627
   ]
  },
  "level3_plus": {
   "pre": 0.345,
-  "post": 0.535,
-  "ratio": 1.5507246376811596,
+  "post": 0.5459770114942529,
+  "ratio": 1.5825420623021824,
   "ci": [
-   1.2374835526315788,
-   1.9508196721311475
+   1.2627489072365228,
+   2.0207638116425657
   ]
  }
 }

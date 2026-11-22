@@ -1,5 +1,5 @@
 """Point 8: static functionality check of exploit repositories (nothing is executed).
-Same random sample as poc_quality.py (200 pre: Jan 2025-Apr 2026; 200 post: May-Oct 2026). Each first-qualifying
+Same random sample as poc_quality.py (200 pre: Jan 2025-Apr 2026; 200 post drawn from May-Oct 2026; the 26 post CVEs published in October 2026 are dropped below so that the post sample ends in September 2026, like every regression). Each first-qualifying
 repository is shallow-cloned into a scratch directory and checked file by file:
   syntax  - parsed without running: Python (ast.parse), shell (bash -n), JavaScript (node --check),
             Ruby (ruby -c), C/C++ (gcc -fsyntax-only), YAML (safe_load; nuclei template structure)
@@ -98,6 +98,14 @@ for per in ('pre', 'post'):
     out[per] = dict(n=len(res), levels={str(k): c.get(k, 0) for k in range(4)}, suspect=sum(x['suspect'] for x in res),
                     nuclei=sum(x['nuclei'] for x in res), gone=sum(bool(x.get('gone')) for x in res), items=res)
     print(per, out[per]['levels'], 'suspect', out[per]['suspect'], 'gone', out[per]['gone'], flush=True)
+# Sample ends September 2026: drop post CVEs published in October 2026 (incomplete 30-day window).
+_pub = {r['cve']: r['pub'] for r in json.load(open('data/poc_lags.json' if os.path.isdir('data') else f'{base}/poc_lags.json'))}
+for per in ('pre', 'post'):
+    its = [x for x in out[per]['items'] if _pub.get(x['cve'], '') < '2026-10-01']
+    c = collections.Counter(x['level'] for x in its)
+    out[per].update(n=len(its), dropped_oct2026=len(out[per]['items']) - len(its), levels={str(k): c.get(k, 0) for k in range(4)},
+                    suspect=sum(x['suspect'] for x in its), nuclei=sum(x['nuclei'] for x in its), items=its)
+    print(per, 'kept', len(its), out[per]['levels'], flush=True)
 b = np.random.default_rng(2)
 def sh(items, lv=3): return np.mean([x['level'] >= lv for x in items])
 for lv in (2, 3):
