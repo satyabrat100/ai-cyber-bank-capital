@@ -35,6 +35,6 @@ cols['metasploit_90d'] = collections.Counter(msf['fast90'])
 cols['nuclei_30d'] = collections.Counter(p[:7] for c, p in npub.items() if 0 <= lagd(c, p) <= 30 and p <= '2026-10-20')
 cols['nuclei_90d'] = collections.Counter(p[:7] for c, p in npub.items() if 0 <= lagd(c, p) <= 90)
 with open(f'{base}/monthly_panel.csv', 'w', newline='') as fh:
-    w = csv.writer(fh); w.writerow(['month'] + list(cols))
+    w = csv.writer(fh, lineterminator='\n'); w.writerow(['month'] + list(cols))
     for m in months: w.writerow([m] + [cols[k].get(m, 0) for k in cols])
 print(open(f'{base}/monthly_panel.csv').read()[:600])
