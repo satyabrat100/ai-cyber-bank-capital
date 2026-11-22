@@ -1,0 +1,42 @@
+{
+ "CVEs published": {
+  "per_month_2025": 3964.5833333333335,
+  "per_month_jan_aug_2026": 7035.75,
+  "ratio": 1.7746505517603783
+ },
+ "CVEs with exploit code within 30 days (PoC-in-GitHub)": {
+  "per_month_2025": 49.5,
+  "per_month_jan_aug_2026": 129.25,
+  "ratio": 2.611111111111111
+ },
+ "CVEs with starred exploit code within 30 days": {
+  "per_month_2025": 35.083333333333336,
+  "per_month_jan_aug_2026": 65.625,
+  "ratio": 1.8705463182897861
+ },
+ "Metasploit modules within 30 days": {
+  "per_month_2025": 8.416666666666666,
+  "per_month_jan_aug_2026": 6.625,
+  "ratio": 0.7871287128712872
+ },
+ "KEV additions (all, by date added)": {
+  "per_month_2025": 20.416666666666668,
+  "per_month_jan_aug_2026": 25.375,
+  "ratio": 1.2428571428571429
+ },
+ "KEV additions within 30 days of publication (by publication month)": {
+  "per_month_2025": 9.916666666666666,
+  "per_month_jan_aug_2026": 13.75,
+  "ratio": 1.3865546218487397
+ },
+ "Nuclei templates within 30 days of publication (by publication month)": {
+  "per_month_2025": 17.583333333333332,
+  "per_month_jan_aug_2026": 28.125,
+  "ratio": 1.599526066350711
+ },
+ "GTIG observed exploited vulnerabilities": {
+  "per_month_2025": 10.583333333333334,
+  "per_month_jan_aug_2026": 17.625,
+  "ratio": 1.6653543307086613
+ }
+}
