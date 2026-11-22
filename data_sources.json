@@ -1,0 +1,46 @@
+{
+ "CVE List V5": {
+  "url": "https://github.com/CVEProject/cvelistV5",
+  "commit": "db766ab518964e91fc0470dfb511605d45e300ed",
+  "commit_date": "2026-11-22T04:16:33+00:00",
+  "local_dir": "data/cvefull"
+ },
+ "PoC-in-GitHub": {
+  "url": "https://github.com/nomi-sec/PoC-in-GitHub",
+  "commit": "63dfb95a2278d9ad17e89ed0c03b0cf5f1612da8",
+  "commit_date": "2026-11-22T10:50:00+09:00",
+  "local_dir": "data/poc"
+ },
+ "Metasploit Framework": {
+  "url": "https://github.com/rapid7/metasploit-framework",
+  "commit": "fa68d9cca90702cb1ae86dbae72d53d0738f7a12",
+  "commit_date": "2026-11-20T14:20:58-06:00",
+  "local_dir": "data/msf"
+ },
+ "CISA KEV data": {
+  "url": "https://github.com/cisagov/kev-data",
+  "commit": "9c564f4dfa6dab393748a3b37038cde6a11b3585",
+  "commit_date": "2026-11-20T19:59:03+00:00",
+  "local_dir": "data/kev"
+ },
+ "VCDB": {
+  "url": "https://github.com/vz-risk/VCDB",
+  "commit": "5ce87b920697e493e697364a972c799f78add489",
+  "commit_date": "2026-11-20T08:11:38-08:00",
+  "local_dir": "data/vcdb"
+ },
+ "nuclei-templates": {
+  "url": "https://github.com/projectdiscovery/nuclei-templates",
+  "commit": "a346d8f00c61bf95bbd30365f12cf923be51ba3d",
+  "commit_date": "2026-11-22T03:11:51+00:00",
+  "local_dir": "data/nuclei"
+ },
+ "GTIG report": {
+  "url": "https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era",
+  "accessed": "2026-11-22"
+ },
+ "VulnCheck 1H-2026": {
+  "url": "https://www.vulncheck.com/blog/state-of-exploitation-1h-2026",
+  "accessed": "2026-11-22"
+ }
+}

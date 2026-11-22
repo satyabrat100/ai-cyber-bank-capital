@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite it as below."
+title: "Replication package: AI-accelerated cyber risk, bank capital and credit supply"
+authors:
+  - family-names: Maharana
+    given-names: Satyabrat
+    orcid: "https://orcid.org/0009-0002-4511-5154"
+    affiliation: "BITS Pilani, Hyderabad Campus"
+version: "7.0"
+date-released: "2026-11-22"
+license: MIT
+repository-code: "https://github.com/satyabrat100/ai-cyber-bank-capital"

@@ -1,0 +1,5 @@
+python>=3.11   # tested with 3.13.18
+numpy==2.5.3
+scipy==1.18.1
+pandas==3.0.5
+statsmodels==0.15.0
