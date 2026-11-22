@@ -34,4 +34,4 @@ for M in [1.0, 1.56]:
                 out[f'{M}|{p0}|{sc}|{share}'] = dict(ratio=float(ratio), ratio_no_common=float(ratio0))
         print(M, p0, {f'sc{sc}|c{s}': round(out[f'{M}|{p0}|{sc}|{s}']['ratio'], 2) for sc in [0.5, 1.0, 2.0] for s in [0.10, 0.25, 0.50]},
               'no common', round(out[f'{M}|{p0}|1.0|0.1']['ratio_no_common'], 2), flush=True)
-json.dump(out, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'results_cv_sens.json'), 'w'), indent=1)
+json.dump(out, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'results', 'results_cv_sens.json'), 'w'), indent=1)

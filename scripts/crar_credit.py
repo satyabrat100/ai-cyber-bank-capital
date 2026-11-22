@@ -1,8 +1,8 @@
-"""Item 16/24: realised 99.9% loss vs capital, CRAR and credit, from results_v5.json.
+"""Item 16/24: realised 99.9% loss vs capital, CRAR and credit, from results_main.json.
 Baseline 99.9% annual loss = 4.52% of bank capital (Section 7.5 calibration).
 CRAR fall (pp) = CRAR x loss/K. Credit fall (%) = xi x incremental loss/K. Output fall (%) = eps x credit fall."""
 import json
-d = json.load(open('results_v5.json'))
+d = json.load(open('results_main.json'))
 CRAR, BASE = 17.7, 0.0452
 out = {}
 for M in ['1.1', '1.25', '1.56', '1.76']:

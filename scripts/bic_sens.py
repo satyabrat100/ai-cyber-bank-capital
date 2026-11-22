@@ -1,7 +1,7 @@
 """Item 20: sensitivity of the gap to the BIC calibration (baseline SA capital = f x baseline VaR) at M = 1.56, q = 99.9%."""
 import json, numpy as np
 from scipy.optimize import brentq
-d = json.load(open('results/results_v5.json'))
+d = json.load(open('results/results_main.json'))
 ilm = lambda lc, b: np.log(np.e - 1 + (lc / b) ** 0.8)
 out = {}
 for sp in ['freq_only', 'freq_sev']:

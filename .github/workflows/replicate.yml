@@ -1,0 +1,30 @@
+# Independent replication on GitHub's own servers: a fresh Ubuntu machine installs the pinned packages,
+# re-runs every step that does not need the third-party raw data, and compares all outputs with the published ones.
+name: replicate
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+jobs:
+  replicate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install -r requirements.txt
+      - name: Keep the published outputs for comparison
+        run: cp -r results results_published
+      - name: Re-run the package
+        run: ./run_all.sh 2>&1 | tee replication_log.txt
+      - name: Compare re-computed outputs with the published outputs
+        run: python3 scripts/compare_outputs.py 2>&1 | tee -a replication_log.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: replication-log
+          path: |
+            replication_log.txt
+            results/

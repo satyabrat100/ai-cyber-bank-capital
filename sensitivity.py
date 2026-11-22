@@ -63,5 +63,5 @@ for e in [0.15, 0.5]:
 for z in [0.075, 0.15, 0.3]:
     p = p_of(eta=0.3, zeta=z); r = cs.run(dr, p, a, qs=(0.99, 0.999))
     out['oat'][f'zeta|{z}'] = {'freq_sev': dict(gap99=r[0.99]['gap'], gap999=r[0.999]['gap'], se999=r[0.999]['gap_se'])}; log('oat zeta', z, round(r[0.999]['gap'] * 100, 1))
-json.dump(out, open('results/results_sens_v5.json' if __import__('os').path.isdir('results') else 'results_sens_v5.json', 'w'), indent=1, default=float)
+json.dump(out, open('results/results_sensitivity.json' if __import__('os').path.isdir('results') else 'results_sensitivity.json', 'w'), indent=1, default=float)
 log('done')

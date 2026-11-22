@@ -85,5 +85,5 @@ for sp in ['freq_only', 'freq_sev']:
             out['path'][f'{sp}|{ramp}|W{W}'] = rows
     log('path', sp, [(r['year'], round(r['var'], 3), round(r['orc'], 3)) for r in out['path'][f'{sp}|ramp3|W10']][:5])
 
-json.dump(out, open('results_v5.json', 'w'), indent=1, default=lambda o: float(o) if isinstance(o, (np.floating,)) else str(o))
+json.dump(out, open('results_main.json', 'w'), indent=1, default=lambda o: float(o) if isinstance(o, (np.floating,)) else str(o))
 log('done')
